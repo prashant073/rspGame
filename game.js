@@ -7,15 +7,13 @@ function computerPlay(){
 
 function player(){
     let play=prompt("make a move: paper Scissors rock ").toLowerCase();
-    return play;
+       return play;
+ 
 }
-
-
     //single round play
 function playRound(playerSelection,computerSelection){
      x=playerSelection;
-     y=computerSelection;
-      
+     y=computerSelection; 
     if(x=='rock' && y=='scissors' || x=='paper' && y=='rock' ||x=='scissors' && y=='paper')
      {
         
@@ -59,7 +57,8 @@ function game(){
 
      if(x==y){
         console.log(playerScore=playerScore,'player');
-        console.log(scoreComputer=scoreComputer,'computer');   
+        console.log(scoreComputer=scoreComputer,'computer'); 
+        
      }
     
 
@@ -68,11 +67,14 @@ if(playerScore>scoreComputer)
      {
          console.log(`You Won! ${playerScore}:${scoreComputer}`);
     }
+    if(playerScore<scoreComputer)
+     {
+         console.log(`You Lost! ${playerScore}:${scoreComputer}`);
+    }
     else
-    console.log("you lost");
- }
+    console.log("Tie Game");
+}
+
   game();
   
-// const computerSelection=computerPlay();
-//  const playerSelection=player();
-//  console.log(playRound(playerSelection,computerSelection));
+
