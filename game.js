@@ -60,10 +60,18 @@ function game(){
      if(x==y){
         console.log(playerScore=playerScore,'player');
         console.log(scoreComputer=scoreComputer,'computer');   
-     }} 
-}
+     }
+    
+
+} 
+if(playerScore>scoreComputer)
+     {
+         console.log(`You Won! ${playerScore}:${scoreComputer}`);
+    }
+    else
+    console.log("you lost");
+ }
   game();
-  
   
 // const computerSelection=computerPlay();
 //  const playerSelection=player();
