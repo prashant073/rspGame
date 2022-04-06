@@ -71,7 +71,7 @@ if(playerScore>scoreComputer)
      {
          console.log(`You Lost! ${playerScore}:${scoreComputer}`);
     }
-    else
+    if(playerScore=scoreComputer)
     console.log("Tie Game");
 }
 
