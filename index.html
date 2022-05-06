@@ -4,26 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./game.js"></script>
-    <title>Paper Scissors Rock</title> 
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <header></header>
-    <h2>First to reach 5 point will be ther winner!</h2>
-    <div class =score-board>
-        <h3 id="you">You</h3>
-        <h3 id="computer">computer</h3>
-        <span id="user_score">0</span>:<span id="computer_score">0</span>   
+    <header class="head">
+        <h1 id="rsp"> Rock-Paper-Scissors !!</h1>
+        <h2 id="rsp2">First To score 5 will be winner!!</h2>
+        
+    </header>
+    <div class="Score-board">
+        <div class="show">
+        <p id="u">You : <span id="you" style="margin-left :2px;"></span></p> 
+         <p id="po">Opponent : <span id="oppo"></span></p>
+         </div>
+         <div class="show">
+        <span id="user-score"> 0 </span>
+        <span style="font-size:80px">
+            :
+        </span> 
+        <span id="comp-score"> 0 </span>
+        </div>
+      
     </div>
-    <div class="result">
-    <h2 id="display">Rocks beats scisscors. You won!!</h2>
+    <div class="choices" id="black">
+        <button id="r">Rock</button>
+        <button id="p">Paper</button>
+        <button id="s">Scissors</button>
+        <p id="result" style="font-size: 40px;"></p>
     </div>
-<div class="choices">
-    <button id="r">rock</button>
-    <button id="p">paper</button>
-    <button id="s">Scisscors</button>
+    <div id="last messages">
+            <h1 id="last"></h1>
+    
     </div>
-    <p>Make your move!!</p>
+    <script src="game.js" refer></script>
 </body>
-
 </html>
